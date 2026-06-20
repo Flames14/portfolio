@@ -90,7 +90,7 @@ const App = () => {
           muted={videoMuted} 
           playsInline
         >
-          <source src="/mp_.mp4" type="video/mp4" />
+          <source src="./mp_.mp4" type="video/mp4" />
         </video>
         <div className="bg-video-overlay"></div>
       </div>
@@ -149,7 +149,7 @@ const App = () => {
           {/* Card 1: Vyllo */}
           <section className="editorial-card reveal-up">
             <div className="card-visual">
-              <img src="/vyllo.png" alt="Vyllo Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop'; }} />
+              <img src="./vyllo.png" alt="Vyllo Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop'; }} />
             </div>
             <div className="card-info">
               <div className="cinema-metadata-bar">
@@ -177,7 +177,7 @@ const App = () => {
           {/* Card 2: Otters */}
           <section className="editorial-card reveal-up">
             <div className="card-visual">
-              <img src="/otters.png" alt="Otters Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop'; }} />
+              <img src="./otters.png" alt="Otters Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop'; }} />
             </div>
             <div className="card-info">
               <div className="cinema-metadata-bar">
@@ -205,7 +205,7 @@ const App = () => {
           {/* Card 3: Invoice Pro */}
           <section className="editorial-card reveal-up">
             <div className="card-visual">
-              <img src="/invoice.png" alt="Invoice Pro Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1000&auto=format&fit=crop'; }} />
+              <img src="./invoice.png" alt="Invoice Pro Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1000&auto=format&fit=crop'; }} />
             </div>
             <div className="card-info">
               <div className="cinema-metadata-bar">
