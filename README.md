@@ -1,16 +1,53 @@
-# React + Vite
+# Portfolio — Sharvin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **ENGINEER | REVERSE ARCHITECT**  
+> Building performance-first open source solutions and clean reverse-engineered architectures for Android, Web, and backend stacks.
 
-Currently, two official plugins are available:
+A cinematic personal portfolio built with React and Vite, showcasing software engineering and reverse engineering projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** — UI framework
+- **Vite 8** — Build tool & dev server
+- **Lucide React** — Icons
+- **Pure CSS** — Styling (Google Fonts: Outfit + Playfair Display)
+- **GitHub Pages** — Deployment via CI/CD
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Featured Projects
+
+### Selection I — Digital Artifacts
+| Project | Description |
+|---|---|
+| **Vyllo Music Player** | Android music player (Kotlin + Jetpack Compose) streaming from YouTube Music |
+| **Otters Media Downloader** | 4K video/audio downloader using yt-dlp + FFmpeg 6.0 |
+| **Invoice Pro Creator** | Client-side PDF invoice generator (Vanilla JS + PDF.js) |
+
+### Selection II — Infrastructure
+| Project | Description |
+|---|---|
+| **WorkForce HRMS** | FastAPI + React enterprise dashboard with payroll and auth |
+| **Quickdesk Workspace** | Electron desktop app for developer operations |
+| **Data Intel** | Dockerized PostgreSQL analysis server with Python processors |
+| **NexusTV App** | Cross-platform IPTV app (Flutter) |
+
+---
+
+## Getting Started
+
+```bash
+npm install
+npm run dev      # Start dev server at http://localhost:5173
+npm run build    # Build for production into dist/
+npm run preview  # Preview production build
+```
+
+---
+
+## Deployment
+
+Automatically deployed to GitHub Pages via GitHub Actions on every push to `main`.  
+Live at: [https://flames14.github.io/portfolio](https://flames14.github.io/portfolio)
