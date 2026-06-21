@@ -3,16 +3,13 @@ import { Terminal, Monitor, Database, Tv, Volume2, VolumeX } from 'lucide-react'
 import './index.css';
 
 /**
- * Cinematic Portfolio Website
- * Main App Component designed in a premium editorial format.
- * Customized for Sharvin.
- * Includes smart video playback (plays at head, freezes on scroll).
+ * Sharvin's portfolio — plays video at the top, pauses when you scroll down.
  */
 const App = () => {
   const videoRef = useRef(null);
   const [videoMuted, setVideoMuted] = useState(true);
 
-  // Setup Intersection Observer to animate elements smoothly as they scroll into view
+  // Fade stuff in as you scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -35,16 +32,16 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Monitor scroll position: play video at the head, pause it when scrolling down
+  // Play video at top, pause on scroll
   useEffect(() => {
     const handleScrollVideo = () => {
       if (!videoRef.current) return;
       const scrollY = window.scrollY;
 
-      // Play video if near the top (within 80px), otherwise freeze/pause it
+      // Near the top? play. Otherwise freeze.
       if (scrollY < 80) {
         videoRef.current.play().catch((err) => {
-          // Catch and handle browser autoplay policy blocks gracefully
+          // Browsers hate autoplay — catch the error silently
           console.log("Autoplay play call handled: ", err);
         });
       } else {
@@ -53,13 +50,13 @@ const App = () => {
     };
 
     window.addEventListener('scroll', handleScrollVideo, { passive: true });
-    // Trigger check immediately on mount
+    // Check right away on load
     handleScrollVideo();
 
     return () => window.removeEventListener('scroll', handleScrollVideo);
   }, []);
 
-  // Scroll to targeted section on nav link click
+  // Smooth scroll to section
   const scrollToSection = (e, targetId) => {
     e.preventDefault();
     const element = document.getElementById(targetId);
@@ -68,7 +65,7 @@ const App = () => {
     }
   };
 
-  // Toggle video audio track state
+  // Mute / unmute video
   const toggleAudioMute = () => {
     if (videoRef.current) {
       const nextMuted = !videoRef.current.muted;
@@ -79,7 +76,7 @@ const App = () => {
 
   return (
     <>
-      {/* Persistent Background Video (Plays at the top, pauses on scroll) */}
+      {/* Background video — plays on top, freezes on scroll */}
       <div className="bg-video-wrapper">
         <video 
           ref={videoRef}
@@ -95,10 +92,10 @@ const App = () => {
         <div className="bg-video-overlay"></div>
       </div>
 
-      {/* Cinematic Scanlines Layer */}
+      {/* Scanlines overlay for that retro vibe */}
       <div className="scanlines"></div>
 
-      {/* Premium Minimalist Header & Navigation */}
+      {/* Nav bar */}
       <header className="nav-container">
         <a 
           href="/" 
@@ -113,7 +110,7 @@ const App = () => {
             <a href="#systems" className="nav-link" onClick={(e) => scrollToSection(e, 'systems')}>Systems</a>
           </nav>
           
-          {/* Background video audio toggle button */}
+          {/* Sound on/off for bg video */}
           <button 
             className="audio-toggle-btn" 
             onClick={toggleAudioMute} 
@@ -124,7 +121,7 @@ const App = () => {
         </div>
       </header>
 
-      {/* --- HERO INTRO --- */}
+      {/* Hero */}
       <section className="hero-sec">
         <div className="hero-box">
           <div className="hero-tag">ENGINEER | REVERSE ARCHITECT</div>
@@ -138,7 +135,7 @@ const App = () => {
         </div>
       </section>
 
-      {/* --- FEATURED WORK SHOWCASE --- */}
+      {/* Projects */}
       <main id="projects" className="editorial-sec">
         <div className="sec-header reveal-up">
           <span className="sec-label">SELECTION I | DIGITAL ARTIFACTS</span>
@@ -146,7 +143,7 @@ const App = () => {
         </div>
 
         <div className="showcase-grid">
-          {/* Card 1: Vyllo */}
+          {/* Vyllo */}
           <section className="editorial-card reveal-up">
             <div className="card-visual">
               <img src="./vyllo.png" alt="Vyllo Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=1000&auto=format&fit=crop'; }} />
@@ -174,7 +171,7 @@ const App = () => {
             </div>
           </section>
 
-          {/* Card 2: Otters */}
+          {/* Otters */}
           <section className="editorial-card reveal-up">
             <div className="card-visual">
               <img src="./otters.png" alt="Otters Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop'; }} />
@@ -202,7 +199,7 @@ const App = () => {
             </div>
           </section>
 
-          {/* Card 3: Invoice Pro */}
+          {/* Invoice Pro */}
           <section className="editorial-card reveal-up">
             <div className="card-visual">
               <img src="./invoice.png" alt="Invoice Pro Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1000&auto=format&fit=crop'; }} />
@@ -232,7 +229,7 @@ const App = () => {
         </div>
       </main>
 
-      {/* --- EDITORIAL INTERSTITIAL --- */}
+      {/* Quote break */}
       <section className="statement-sec reveal-up">
         <div className="statement-box">
           <p className="statement-text">
@@ -241,7 +238,7 @@ const App = () => {
         </div>
       </section>
 
-      {/* --- SYSTEMS SECTIONS --- */}
+      {/* Systems / backend */}
       <section id="systems" className="editorial-sec">
         <div className="sec-header reveal-up">
           <span className="sec-label">SELECTION II | INFRASTRUCTURE</span>
@@ -275,7 +272,7 @@ const App = () => {
         </div>
       </section>
 
-      {/* --- FOOTER --- */}
+      {/* Footer */}
       <footer className="footer-sec">
         <div>&copy; {new Date().getFullYear()} Cinematic Portfolio. All rights reserved.</div>
         <div>DESIGNED BY SHARVIN</div>
