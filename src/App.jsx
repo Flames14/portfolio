@@ -226,6 +226,90 @@ const App = () => {
               </div>
             </div>
           </section>
+
+          {/* Workforce */}
+          <section className="editorial-card reveal-up">
+            <div className="card-visual">
+              <img src="./Workforce.png" alt="Workforce Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop'; }} />
+            </div>
+            <div className="card-info">
+              <div className="cinema-metadata-bar">
+                <span className="cinema-meta-tag">ROLL B 01</span>
+                <span>LENS: 24MM</span>
+                <span>ISO: 400</span>
+              </div>
+              <h3 className="card-title">Workforce Management</h3>
+              <p className="card-desc">
+                An intuitive workforce and resource planning tool. Engineered with clean architecture to provide seamless administrative workflows and team coordination.
+              </p>
+              <div className="card-specs-row">
+                <div className="spec-column">
+                  <span className="spec-lbl">Environment</span>
+                  <span className="spec-val">Web Platform</span>
+                </div>
+                <div className="spec-column">
+                  <span className="spec-lbl">Architecture</span>
+                  <span className="spec-val">React Engine</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* DataIntel */}
+          <section className="editorial-card reveal-up">
+            <div className="card-visual">
+              <img src="./dataintel.png" alt="DataIntel Analytics Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop'; }} />
+            </div>
+            <div className="card-info">
+              <div className="cinema-metadata-bar">
+                <span className="cinema-meta-tag">ROLL B 02</span>
+                <span>LENS: 50MM</span>
+                <span>ISO: 100</span>
+              </div>
+              <h3 className="card-title">DataIntel Analytics</h3>
+              <p className="card-desc">
+                A highly performant data visualization and analytics dashboard. Designed to process complex datasets and render clean, cinematic statistical metrics instantly.
+              </p>
+              <div className="card-specs-row">
+                <div className="spec-column">
+                  <span className="spec-lbl">Core Engine</span>
+                  <span className="spec-val">Data Processing</span>
+                </div>
+                <div className="spec-column">
+                  <span className="spec-lbl">Performance</span>
+                  <span className="spec-val">Real-time Rendering</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* QuickDesk */}
+          <section className="editorial-card reveal-up">
+            <div className="card-visual">
+              <img src="./quickdesk.png" alt="QuickDesk Dashboard Showcase" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1000&auto=format&fit=crop'; }} />
+            </div>
+            <div className="card-info">
+              <div className="cinema-metadata-bar">
+                <span className="cinema-meta-tag">ROLL B 03</span>
+                <span>LENS: 85MM</span>
+                <span>ISO: 200</span>
+              </div>
+              <h3 className="card-title">QuickDesk Dashboard</h3>
+              <p className="card-desc">
+                A streamlined administration and helpdesk control center. Built to maximize agent efficiency while maintaining a beautiful, distraction-free interface.
+              </p>
+              <div className="card-specs-row">
+                <div className="spec-column">
+                  <span className="spec-lbl">Core Stack</span>
+                  <span className="spec-val">Modern UI</span>
+                </div>
+                <div className="spec-column">
+                  <span className="spec-lbl">Experience</span>
+                  <span className="spec-val">Frictionless UX</span>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
 
