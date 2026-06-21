@@ -129,11 +129,11 @@ const App = () => {
         <div className="hero-box">
           <div className="hero-tag">ENGINEER | REVERSE ARCHITECT</div>
           <h1 className="hero-headline">
-            <span>Built with</span>
-            <span className="italic-font">Heart & Code</span>
+            <span>Engineering with</span>
+            <span className="italic-font">Aesthetic Soul</span>
           </h1>
           <p className="hero-description">
-            I build open source tools for Android, Web, and backend. Performance first, always.
+            Building performance first open source solutions and clean reverse engineered architectures for Android, Web, and backend stacks.
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ const App = () => {
       {/* --- FEATURED WORK SHOWCASE --- */}
       <main id="projects" className="editorial-sec">
         <div className="sec-header reveal-up">
-          <span className="sec-label">THINGS I'VE BUILT</span>
+          <span className="sec-label">SELECTION I | DIGITAL ARTIFACTS</span>
           <h2 className="sec-title">Featured Work</h2>
         </div>
 
@@ -159,7 +159,7 @@ const App = () => {
               </div>
               <h3 className="card-title">Vyllo Music Player</h3>
               <p className="card-desc">
-                An Android music player that streams from YouTube Music in the background. No ads, no interruptions. Built with Kotlin and Jetpack Compose.
+                A custom built music player for Android that lets you stream your favorite tracks from YouTube Music seamlessly in the background without interruptions. Crafted entirely with Kotlin and Jetpack Compose.
               </p>
               <div className="card-specs-row">
                 <div className="spec-column">
@@ -187,7 +187,7 @@ const App = () => {
               </div>
               <h3 className="card-title">Otters Media Downloader</h3>
               <p className="card-desc">
-                A no-nonsense tool that grabs 4K videos and audio from the web. Powered by yt-dlp and FFmpeg 6.0.
+                A clean, powerful downloader built to fetch high resolution 4K videos and audio. Perfect for saving media offline, utilizing optimized yt-dlp integrations.
               </p>
               <div className="card-specs-row">
                 <div className="spec-column">
@@ -215,7 +215,7 @@ const App = () => {
               </div>
               <h3 className="card-title">Invoice Pro Creator</h3>
               <p className="card-desc">
-                A simple tool that makes PDF invoices right in your browser. Everything stays on your machine — nothing leaves.
+                A lightweight utility that generates professional PDF invoices directly in your browser. Complete client side execution ensures your financial data stays completely private.
               </p>
               <div className="card-specs-row">
                 <div className="spec-column">
@@ -236,7 +236,7 @@ const App = () => {
       <section className="statement-sec reveal-up">
         <div className="statement-box">
           <p className="statement-text">
-            "Good code works. Great code feels right."
+            "Form follows function, but <span>art</span> gives it soul. We engineer highly performant systems with meticulous attention to clean visual grids."
           </p>
         </div>
       </section>
@@ -244,7 +244,7 @@ const App = () => {
       {/* --- SYSTEMS SECTIONS --- */}
       <section id="systems" className="editorial-sec">
         <div className="sec-header reveal-up">
-          <span className="sec-label">BACKEND & SYSTEMS</span>
+          <span className="sec-label">SELECTION II | INFRASTRUCTURE</span>
           <h2 className="sec-title">Logic Architecture</h2>
         </div>
 
@@ -252,32 +252,32 @@ const App = () => {
           <div className="system-card reveal-up">
             <Monitor className="system-icon" size={26} />
             <h3 className="system-title">WorkForce HRMS</h3>
-            <p className="system-desc">An enterprise dashboard built with FastAPI and React. Handles payroll, auth, and HR data in one place.</p>
+            <p className="system-desc">FastAPI and React enterprise dashboard providing secure indexing pipelines, automated payroll processes, and user authentication.</p>
           </div>
 
           <div className="system-card reveal-up">
             <Terminal className="system-icon" size={26} />
             <h3 className="system-title">Quickdesk Workspace</h3>
-            <p className="system-desc">An Electron desktop app for dev ops and API log coordination. Keeps your team in sync.</p>
+            <p className="system-desc">A highly responsive Electron desktop node designed to streamline developer operations and coordinate team API logs instantly.</p>
           </div>
 
           <div className="system-card reveal-up">
             <Database className="system-icon" size={26} />
             <h3 className="system-title">Data Intel</h3>
-            <p className="system-desc">A Dockerized PostgreSQL server that parses telemetry data and feeds analytics using Python.</p>
+            <p className="system-desc">Dockerized PostgreSQL analysis server designed to parse telemetry logs and feed analytical data sets using Python processors.</p>
           </div>
 
           <div className="system-card reveal-up">
             <Tv className="system-icon" size={26} />
             <h3 className="system-title">NexusTV App</h3>
-            <p className="system-desc">A cross-platform IPTV app built with Flutter. Works on mobile and desktop.</p>
+            <p className="system-desc">Optimized cross-platform IPTV application built using the fast-compiling Flutter framework for mobile and desktop screens.</p>
           </div>
         </div>
       </section>
 
       {/* --- FOOTER --- */}
       <footer className="footer-sec">
-        <div>&copy; {new Date().getFullYear()} Sharvin. All rights reserved.</div>
+        <div>&copy; {new Date().getFullYear()} Cinematic Portfolio. All rights reserved.</div>
         <div>DESIGNED BY SHARVIN</div>
       </footer>
     </>
